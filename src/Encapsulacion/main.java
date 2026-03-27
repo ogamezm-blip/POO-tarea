@@ -15,9 +15,9 @@ public class main {
         p2.mostrar();
         p3.mostrar();
         
+        //********************************************************************************************************************
         
         System.out.println("\n		EJERCICIO 2: CLASE RECTANGULO");
-        
      // objetos de tipo Rectángulo
         Rectangulo r1 = new Rectangulo(10.5, 5.0);
         Rectangulo r2 = new Rectangulo(7.0, 8.0);
@@ -36,6 +36,24 @@ public class main {
             System.out.println("Ambos tienen la misma área.");
         }
         
+        //********************************************************************************************************************
+        System.out.println("\n		EJERCICIO 3: CLASE PRODUCTO");
+        
+        Producto prod1 = new Producto(1, "Manzanas", 5000);
+        Producto prod2 = new Producto(2, "Peras", 6800);
+        
+        System.out.println("Antes del descuento. Producto 1: " + prod1.getNombre() + " (Código: " + prod1.getCodigo() +  ", Precio original: Q." + prod1.getPrecio());
+        System.out.println("Antes del descuento. Producto 2: " + prod2.getNombre() + " (Código: " + prod2.getCodigo() + ", Precio original: Q." + prod2.getPrecio());
+        
+        prod1.aplicarDescuento(0.18);
+        prod2.aplicarDescuento(0.20);
+        
+        System.out.println("\nDespues del descuento. Producto 1: " + prod1.getNombre() + " (Código: " + prod1.getCodigo() + "). Nuevo precio: Q." + prod1.getPrecio());
+        System.out.println("Despues del descuento. Producto 1: " + prod2.getNombre() + " (Código: " + prod2.getCodigo() + "). Nuevo precio: Q." + prod2.getPrecio());
+        
+        //********************************************************************************************************************
+        
+        	
         
 	}
 }
