@@ -5,7 +5,6 @@ public class Rectangulo {
 	private double altura;
 	
 	public Rectangulo(double base, double altura) {
-		super();
 		this.base = base;
 		this.altura = altura;
 	}

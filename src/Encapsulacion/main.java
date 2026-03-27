@@ -53,7 +53,28 @@ public class main {
         
         //********************************************************************************************************************
         
-        	
+        System.out.println("\n		EJERCICIO 4: CLASE CUENTA");
+        // Objeto: mi cuenta inicial
+        Cuenta miCuenta = new Cuenta("Leo", 500.0);
+        
+        System.out.println("Titular: " + miCuenta.getTitular());
+        System.out.println("Saldo inicial: Q." + miCuenta.getSaldo());
+
+        System.out.println("\n--- Realizando Operaciones ---");
+        
+        // Intentos de operacion
+        miCuenta.depositar(200.0);
+        miCuenta.retirar(100.0);
+        
+        // Retiro mayor al saldo
+        miCuenta.retirar(1000.0);
+        
+        // Deposito negativo
+        miCuenta.depositar(-50.0);
+
+        System.out.println("\n--- Estado Final ---");
+        System.out.println("Titular: " + miCuenta.getTitular());
+        System.out.println("Saldo Final: Q." + miCuenta.getSaldo());
         
 	}
 }
