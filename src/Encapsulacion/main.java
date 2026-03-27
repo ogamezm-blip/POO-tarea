@@ -17,7 +17,7 @@ public class main {
         
         //********************************************************************************************************************
         
-        System.out.println("\n		EJERCICIO 2: CLASE RECTANGULO");
+        System.out.println("\n\n		EJERCICIO 2: CLASE RECTANGULO");
      // objetos de tipo Rectángulo
         Rectangulo r1 = new Rectangulo(10.5, 5.0);
         Rectangulo r2 = new Rectangulo(7.0, 8.0);
@@ -37,7 +37,7 @@ public class main {
         }
         
         //********************************************************************************************************************
-        System.out.println("\n		EJERCICIO 3: CLASE PRODUCTO");
+        System.out.println("\n\n		EJERCICIO 3: CLASE PRODUCTO");
         
         Producto prod1 = new Producto(1, "Manzanas", 5000);
         Producto prod2 = new Producto(2, "Peras", 6800);
@@ -53,7 +53,7 @@ public class main {
         
         //********************************************************************************************************************
         
-        System.out.println("\n		EJERCICIO 4: CLASE CUENTA");
+        System.out.println("\n\n		EJERCICIO 4: CLASE CUENTA");
         // Objeto: mi cuenta inicial
         Cuenta miCuenta = new Cuenta("Leo", 500.0);
         
@@ -79,7 +79,7 @@ public class main {
         
 //********************************************************************************************************************
         
-        System.out.println("\n		EJERCICIO 5: CLASE LIBRO");
+        System.out.println("\n\n		EJERCICIO 5: CLASE LIBRO");
         // 3 objetos: 3 libros
         Libro libro1 = new Libro("El Señor de los Anillos", "Juan Jose", 1178);
         Libro libro2 = new Libro("El Principito", "Roberto Bolaño", 96);
@@ -103,7 +103,7 @@ public class main {
         
 //********************************************************************************************************************
         
-        System.out.println("\n		EJERCICIO 6: CLASE CALCULADORA");
+        System.out.println("\n\n		EJERCICIO 6: CLASE CALCULADORA");
         
         Calculadora calc = new Calculadora();
         double n1 = 15.0;
@@ -118,5 +118,28 @@ public class main {
 
         System.out.println("\nIntentando dividir " + n1 + " entre " + nCero + ":");
         double resultadoError = calc.dividir(n1, nCero);
+        
+        
+//********************************************************************************************************************
+        
+        System.out.println("\n\n		EJERCICIO 7: CLASE FECHA");
+        // 3 objetos: 3 fehcas
+        Fecha f1 = new Fecha(01, 4, 2024); 
+        Fecha f2 = new Fecha(38, 2, 2023); 
+        Fecha f3 = new Fecha(10, 15, 2022);
+
+        // Lista de pruebas
+        Fecha[] fechas = {f1, f2, f3};
+
+        for (int i = 0; i < fechas.length; i++) {
+            System.out.print("Fecha " + (i + 1) + " [" + fechas[i].getFechaFormateada() + "] = ");
+            if (fechas[i].esValida()) {
+                System.out.println("Es una fecha válida.");
+            } else {
+                System.out.println("Error: Rango de día o mes incorrecto.");
+            }
+        }
+        
+        
 	}
 }
