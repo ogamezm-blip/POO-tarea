@@ -22,4 +22,24 @@ public class Fecha {
     public String getFechaFormateada() {
         return dia + "/" + mes + "/" + año;
     }
+    
+    public static void ejercicioCalculadora() {
+    	 System.out.println("\n\n		EJERCICIO 7: CLASE FECHA");
+         // 3 objetos: 3 fehcas
+         Fecha f1 = new Fecha(01, 4, 2024); 
+         Fecha f2 = new Fecha(38, 2, 2023); 
+         Fecha f3 = new Fecha(10, 15, 2022);
+
+         // Lista de pruebas
+         Fecha[] fechas = {f1, f2, f3};
+
+         for (int i = 0; i < fechas.length; i++) {
+             System.out.print("Fecha " + (i + 1) + " [" + fechas[i].getFechaFormateada() + "] = ");
+             if (fechas[i].esValida()) {
+                 System.out.println("Es una fecha válida.");
+             } else {
+                 System.out.println("Error: Rango de día o mes incorrecto.");
+             }
+         }
+    }
 }
