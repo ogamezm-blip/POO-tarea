@@ -9,6 +9,7 @@ public class Calculadora {
     // Resta
     public double restar(double a, double b) {
         return a - b;
+        //calculadora sin funcionar
     }
 
     // Multiplicacion
